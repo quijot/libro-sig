@@ -7,20 +7,20 @@
 \bigskip
 
 \begin{intro}
-Este capítulo presenta los conceptos fundamentales sobre Sistemas de Información Geográfica (SIG), definiéndolos y presentando tanto sus capacidades fundamentales como la forma en que estas pueden ser aprovechadas. Asimismo, se presentan los SIG como sistemas complejos, y se describe cada uno de sus componentes principales. El capítulo presenta una visión global del ámbito de los SIG y de la ciencia asociada a los SIG como disciplina independiente, al tiempo que muestra el contexto en el que el desarrollo y utilización de estos se produce en la actualidad.
+This chapter introduces the fundamental concepts of Geographical Information Systems (GIS). It also introduces GIS as complex systems and describes each of its main components. The chapter provides a global vision of GIS and the science of geographical information, while describing the context in which development and usage of GIS takes places nowadays.
 \end{intro}
 
 \section{Introducción}
 
-Para justificar la importancia de los Sistemas de Información Geográfica (SIG) y el papel que estos juegan hoy en día, es habitual en libros como este citar el hecho de que aproximadamente un 70\% de la información que manejamos en cualquier tipo de disciplina está georreferenciada. Es decir, que se trata de información a la cual puede asignarse una posición geográfica, y es por tanto información que viene acompañada de otra información adicional relativa a su localización. 
+A large part of the information that we use is georeferenced. That is, a position can be asigned to it, and is therefore information that comes along with ancilliary information about its location in space.
 
-Si bien es probable que este porcentaje no haya variado desde que comenzó a mencionarse en los libros sobre SIG, la situación es en la actualidad más favorable que nunca para el desarrollo de herramientas que permitan la utilización de toda esa información al tiempo que se consideran los datos relativos a su posición en el espacio. Esto es así no solo porque trabajamos con gran cantidad de información referenciada geográficamente, sino porque somos cada día más conscientes de la importancia que esa componente geográfica tiene. La geografía ha pasado de ser un ámbito particular con cierta relación con otros campos a ser un elemento fundamental incorporado a la mayor parte de las disciplinas. Y no solo en el terreno científico, sino en el terreno mismo de la vida diaria, donde toda esta información desempeña un papel de gran importancia.
+Information has never been as available as it is today, and we have never been in such a good context for using it and extracting the most out of it, especially if we consider the positional component that, as it has been said, most information has. This is not only because there is a large amount of georeferenced information available, but also because we are each day more aware of the importance of geographical information. Geography, which had a certain degree of relation with some other disciplines, has become now a fundamental element in most disciplines, not just in the technical or scientific contexts, but also in our daily life.
 
-La utilización de cartografía ha dado un vuelco radical en el plazo de unas décadas, permitiendo nuevas posibilidades y acercando la información cartográfica como herramienta de primer orden a un público amplio y diverso. La elaboración misma de cartografía ha pasado de ser terreno exclusivo de profesionales del sector a ser una labor abierta donde las nuevas tecnologías, especialmente las de corte colaborativo, han permitido que otro tipo de usuarios desarrollen y compartan información cartográfica.
+In the last decades, usage of cartography has radically changed, allowing new possibities and bringing geographic information to a much wider and diverse audience. Creation of cartography has changed itself, from being something restricted to a selected group of professionals, to being a task than now almost anyone can perform with tools that are popular and affordable. New techologies, especially collaboratives ones, allow now people to create and share cartography in a way that was not possible only a few years ago.
 
-En este sentido, los SIG no son solo herramientas dentro de ese contexto de gran importancia de la información geográfica, sino en gran medida responsables de que esa situación sea tal, pues su contribución dentro del panorama relativo a la geografía ha sido vital para impulsar esta y hacerla llegar hasta su lugar actual. En una sociedad donde la información y la tecnología son dos de los pilares fundamentales, los SIG son, sin lugar a dudas, la tecnología estandarte para el manejo de información geográfica, y los elementos básicos que canalizan la gestión de todo aquello que, de un modo u otro, presente una componente geográfica susceptible de ser aprovechada.
+GIS are not just mere tools in this new context of geographical information. They are responsible for this situation, since they have themselves changed the discipline of geography into what it is now. In a society where information and technology are two of its main elements, GIS are the fundamental technology to use all kinds of geographical information, and a centralizing element for handling, analyzing and understanding all information that includes some positional component.
 
-Así, un SIG es fundamentalmente una herramienta para trabajar con información georreferenciada, una definición en la que pueden entrar un gran número de tecnologías y de otros elementos no tecnológicos, los cuales veremos a lo largo de este libro.
+Therefore, GIS are basically tools to work with geographical information, a definition into which several different technologies and concepts can fit, as we will see in this book
 
 
 \section{Un pequeño ejemplo}
@@ -66,17 +66,22 @@ El trabajo que se desarrollaba en la hoja de cálculo con estos datos se puede in
 
 En resumen, el SIG en su concepción actual es una herramienta integradora que busca abarcar en su ámbito todas las funcionalidades que se requieren para el trabajo con variables y elementos espacialmente localizados, incorporando para ello capacidades variadas que serán las que vayamos viendo progresivamente a lo largo de esta obra.
 
-\section{¿Qué es un SIG?}
+\section{What is a GIS?}
 
-Partiendo del ejemplo anterior, podemos dar una definición más precisa y formal de lo que realmente es un SIG. Básicamente, un SIG ha de permitir la realización las siguientes operaciones:
+Considering the example that was just described, let's try to give a more formal definition of what a GIS really is. Basically, a GIS must be able to perform the following operations:
 
 \begin{itemize}
-	\item Lectura, edición, almacenamiento y, en términos generales, gestión de datos espaciales.
-	\item Análisis de dichos datos. Esto puede incluir desde consultas sencillas a la elaboración de complejos modelos, y puede llevarse a cabo tanto sobre la componente espacial de los datos (la localización de cada valor o elemento) como sobre la componente temática (el valor o el elemento en sí).
-	\item Generación de resultados tales como mapas, informes, gráficos, etc.
+	\item Reading, editing, storing and, in general, managing geospatial data.
+	\item Analising geospatial data. This analysis might ange from simple queries to complex models, and can be referred to the spatial component of the data (the location of the element) or the thematic component (the value of the element itself).
+	\item Generating results such as maps, reports, graphics, etc.
 \end{itemize}
 
-En función de cual de estos aspectos se valore como más importante, encontramos distintas definiciones formales del concepto de un SIG. Una definición clásica es la de \cite{Tomlin1990Prentice}, para quien un SIG es un elemento que permite <<analizar, presentar e interpretar hechos relativos a la superficie terrestre>>. El mismo autor argumenta, no obstante, que <<esta es una definición muy amplia, y habitualmente se emplea otra más concreta. En palabras habituales, un SIG es un conjunto de \emph{software} y \emph{hardware} diseñado específicamente para la adquisición, mantenimiento y uso de datos cartográficos>>.
+Depending of which one of these is given more prevalence, we find different definitions for a GIS. A classical defintion is the one given by \cite{Tomlin1990Prentice}, who defines a GIS as a tool that can 
+
+
+*****
+
+<<analizar, presentar e interpretar hechos relativos a la superficie terrestre>>. El mismo autor argumenta, no obstante, que <<esta es una definición muy amplia, y habitualmente se emplea otra más concreta. En palabras habituales, un SIG es un conjunto de \emph{software} y \emph{hardware} diseñado específicamente para la adquisición, mantenimiento y uso de datos cartográficos>>.
 
 En una línea similar, \cite{Star1990Prentice} define un SIG como un <<sistema de información diseñado para trabajar con datos referenciados mediante coordenadas espaciales o geográficas. En otras palabras, un SIG es tanto un sistema de base de datos con capacidades específicas para datos georreferenciados, como un conjunto de operaciones para trabajar con esos datos. En cierto modo, un SIG es un mapa de orden superior>>.
 
@@ -86,7 +91,7 @@ Como apunta \cite{Tomlin1990Prentice}, \emph{software} y \emph{hardware} son dos
 
 De igual modo, un SIG puede considerarse como un <<mapa de orden superior>> entendiendo que se trata de una forma más potente y avanzada de hacer todo aquello que, previamente a la aparición de los SIG, se llevaba a cabo mediante el uso de mapas y cartografía en sentido clásico. Es decir, los SIG representan un paso más allá de los mapas. No obstante, esta definición resulta en exceso simplista, pues mapas y SIG no son conceptos equiparables en el contexto actual de estos últimos. 
 
-Un mapa es una representación de un conjunto de datos espaciales y, aunque esta representación resulta de enorme importancia, en el entorno de un SIG no es sino un elemento más de una serie de componentes (tales como el \emph{software} y el \emph{hardware} que antes mencionábamos). Más aún, un SIG contiene no solo los datos y la representación, sino también las operaciones que pueden hacerse sobre el mapa, que no son ajenas a este sino partes igualmente de todo el sistema conformado por el SIG.
+Un mapa es una representación de un conjunto de datos espaciales y, aunque esta representación resulta de enorme importancia, en el entorno de un SIG no es sino un elemento más de una serie de componentes (tales como el \emph{software} y el \emph{hardware} que antes mencionábamos). Más aún, un SIG contiene no solo los datos y la representación, sino también las operaciones que pueden hacerse sobre el mapa, que no son ajenas a este sino partes igualmente de todo el sistema conormado por el SIG.
 
 De la misma forma que los textos han pasado del papel al ordenador (antes leíamos libros, ahora podemos leer libros impresos, libros digitales, páginas Web, etc.), los mapas también han dado ese salto cualitativo con la aparición de los SIG. Sin embargo, el SIG es mucho más que una nueva forma de cartografía, y no invalida en absoluto formas anteriores. De hecho, una función muy importante de los SIG es ayudar a crear mapas en papel, y estos se siguen utilizando hoy en día en todos los ámbitos. Y junto con esta funcionalidad, encontramos otras que hacen que en su conjunto un SIG sea una herramienta integradora y completa para el trabajo con información georreferenciada.
 
