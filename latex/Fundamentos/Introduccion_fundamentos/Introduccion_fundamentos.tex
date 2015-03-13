@@ -72,44 +72,42 @@ Considering the example that was just described, let's try to give a more formal
 
 \begin{itemize}
 	\item Reading, editing, storing and, in general, managing geospatial data.
-	\item Analising geospatial data. This analysis might ange from simple queries to complex models, and can be referred to the spatial component of the data (the location of the element) or the thematic component (the value of the element itself).
+	\item Analising geospatial data. This analysis might range from simple queries to complex models, and can be referred to the spatial component of the data (the location of the element) or the thematic component (the value of the element itself).
 	\item Generating results such as maps, reports, graphics, etc.
 \end{itemize}
 
-Depending of which one of these is given more prevalence, we find different definitions for a GIS. A classical defintion is the one given by \cite{Tomlin1990Prentice}, who defines a GIS as a tool that can 
+Depending of which one of these is given more prevalence, we find different definitions for a GIS. A classical defintion is the one given by \cite{Tomlin1990Prentice}, who defines a GIS a <<system is a facility for preparing, presenting, and interpreting facts that pertain to the surface of the earth. This is a broad definition\ldots a considerably narrower definition, however, is more often employed. In common parlance, a geographic information system or GIS is a configuration of computer hardware and software specifically designed for the acquisition, maintenance, and use of cartographic data.>>
+
+\cite{Star1990Prentice} defines a GIS as a <<A geographic information system (GIS) is an information system that is designed to work with data referenced by spatial or geographic coordinates. In other words, a GIS is both a database system with specific capabilities for spatially-reference data, as well as a set of operations for working with data. In a sense, a GIS may be thought of as a higher-order map>>.
+
+Both definitions represent the idea of a GIS at the time they were written, but the concept of a GIS nowadays needs to include other elements. The current definition of a GIS should be based on the concept of a \emph{system} as an integrating element that encompasses a set of interrelated components.
+
+As \cite{Tomlin1990Prentice} points out, software and hardware are the two fundamental elements of a GIS. but they are not the onl ones. In the current context, other components play a role that is opf the same importance for understanding the idea of a GIS.
+
+Also, as \cite{Star1990Prentice} states, a GIS can be considered a <<higher order map>>, that meaning that they represent a more advanced and powerful way of performing all the tasks that were traditionally performed using maps and the classical ideas and elements of cartography. That is, GIS represent a step further beyond maps. That definition, however, is too simplistic, since maps and GIS are not comparable ideas in the current context.
+
+A map is a representation of geospatial data. Although that representation is without doubt important, in the context of a GIS it is just one element in the set of them that constitute that GIS (such the software and hardware, as it was previously mentioned). Moreover, the GIS does not contain just the geospatial data and its representation, but also all the operations and analysis that can be performed on them, which are not extraneous to the GIS itself, but a fundamental part of it as well.
+
+Much in the same way that books have made their way from paper to computer (we used to read paper books, now we can read e--books, web pages, etc.), maps have had a similar transition since the appearance of GIS.  However, GIS is much more than a new form of cartography, and it does not invalidate previous forms. In fact, and important feature of GIS is its ability to create traditional printed maps, which are still used in most contexts. Along with this, we find other additional features that make GIS a complete and integrating tool for working with geospatial data.
+
+Therefore, GIS must be understood as a complex system consisting of connected elements, each of them with a well--defined function. These elements, as we will detail in the following chapters, are \emph{data, analysis, visualization, technology and organizational factor}. 
+
+With that, a more precise definition of GIS is that a GIS is system that integrates computer technology, people and geographic information \cite{webGISCOM}, its main function being to capture, analyze, store edit and represent geospatial data \cite{Korte2001Autodesk}.
+
+In the following sections, we will see the way that GIS integrates technology, peoplea and information, an also how the fundamental underlying concepts of GIS integrate a large array of interelated disciplines.
+
+\subsection{SIG as an integrator of information}
+
+Different kinds of information are used in different disciplines. Finding a common element to link them and work with them is not always an easy task, although it is frequently a much needed one to be able to understand their meaning. 
+
+Without a common ground, information used in each discipline tends to be isolated and not used in other contexts. When a 
 
 
-*****
+Since most of the information has a spatial component, geography provides an ideal base ground for comparing an analizing, and acts as the linking glue between diffrent types of information that at first sight might not have much in common. 
 
-<<analizar, presentar e interpretar hechos relativos a la superficie terrestre>>. El mismo autor argumenta, no obstante, que <<esta es una definición muy amplia, y habitualmente se emplea otra más concreta. En palabras habituales, un SIG es un conjunto de \emph{software} y \emph{hardware} diseñado específicamente para la adquisición, mantenimiento y uso de datos cartográficos>>.
+In this context, GIS provides a framework to perform interdisciplinary projects, providing tools that can be used to work with information that is of a very diverse nature, but that has a point in common in its spatial component.
 
-En una línea similar, \cite{Star1990Prentice} define un SIG como un <<sistema de información diseñado para trabajar con datos referenciados mediante coordenadas espaciales o geográficas. En otras palabras, un SIG es tanto un sistema de base de datos con capacidades específicas para datos georreferenciados, como un conjunto de operaciones para trabajar con esos datos. En cierto modo, un SIG es un mapa de orden superior>>.
 
-Ambas definiciones recogen el concepto fundamental de los SIG en el momento en que fueron escritas, pero la realidad hoy en día hace necesario recoger otras ideas, y la definición actual de un SIG debe fundamentarse sobre todo en el concepto de \emph{sistema} como elemento integrador que engloba a un conjunto de componentes interrelacionados.
-
-Como apunta \cite{Tomlin1990Prentice}, \emph{software} y \emph{hardware} son dos elementos primordiales del SIG, pero no son sin embargo los únicos. En el contexto actual, otros componentes juegan un papel igual de importante en la idea global de un SIG.
-
-De igual modo, un SIG puede considerarse como un <<mapa de orden superior>> entendiendo que se trata de una forma más potente y avanzada de hacer todo aquello que, previamente a la aparición de los SIG, se llevaba a cabo mediante el uso de mapas y cartografía en sentido clásico. Es decir, los SIG representan un paso más allá de los mapas. No obstante, esta definición resulta en exceso simplista, pues mapas y SIG no son conceptos equiparables en el contexto actual de estos últimos. 
-
-Un mapa es una representación de un conjunto de datos espaciales y, aunque esta representación resulta de enorme importancia, en el entorno de un SIG no es sino un elemento más de una serie de componentes (tales como el \emph{software} y el \emph{hardware} que antes mencionábamos). Más aún, un SIG contiene no solo los datos y la representación, sino también las operaciones que pueden hacerse sobre el mapa, que no son ajenas a este sino partes igualmente de todo el sistema conormado por el SIG.
-
-De la misma forma que los textos han pasado del papel al ordenador (antes leíamos libros, ahora podemos leer libros impresos, libros digitales, páginas Web, etc.), los mapas también han dado ese salto cualitativo con la aparición de los SIG. Sin embargo, el SIG es mucho más que una nueva forma de cartografía, y no invalida en absoluto formas anteriores. De hecho, una función muy importante de los SIG es ayudar a crear mapas en papel, y estos se siguen utilizando hoy en día en todos los ámbitos. Y junto con esta funcionalidad, encontramos otras que hacen que en su conjunto un SIG sea una herramienta integradora y completa para el trabajo con información georreferenciada.
-
-Debe entenderse, pues, un SIG, como un elemento complejo que engloba una serie de otros elementos conectados, cada uno de los cuales desempeña una función particular. Estos elementos son, como iremos viendo más adelante, los datos, los procesos, la visualización, la tecnología y el factor organizativo. Baste por el momento citarlos, ya que más adelante, y a lo largo de todo el libro, se irán describiendo pormenorizadamente todos ellos.
-
-Con lo anterior, una definición más precisa es decir que un SIG es un sistema que integra tecnología informática, personas e información geográfica\cite{webGISCOM}, y cuya principal función es capturar, analizar, almacenar, editar y representar datos georreferenciados \cite{Korte2001Autodesk}.
-
-En las siguientes secciones veremos por separado la forma en que un SIG integra la tecnología informática, las personas y la información geográfica, así como la forma en que los conceptos fundamentales en los que el propio SIG se sustenta suponen una integración de distintas disciplinas.
-
-\subsection{SIG como integrador de información}
-
-Si bien un SIG tiene una inherente naturaleza integradora y esta puede enfocarse desde muchos puntos de vista tal y como vemos en este apartado, el elemento tal vez más relevante en este sentido es la propia información que un SIG maneja y las características de esta. Conceptualmente, el verdadero pilar de esa naturaleza integradora del SIG reside en la información geográfica con la que se trabaja, que provee la amalgama adecuada para que un SIG sea un sistema sólido y cohesionado, confiriéndole a su vez sus propias características y su interés como herramienta polivalente.
-
-Muchas disciplinas trabajan con información de distinta naturaleza. En ellas, no siempre resulta sencillo buscar elementos en común para poder unir y coordinar toda esa información bajo un único punto de vista conceptual. En otras ocasiones, disciplinas que en la práctica presentan una interacción real (puede decirse que, de un modo u otro, todas las disciplinas están interrelacionadas) resultan difíciles de integrar desde el punto de vista teórico, y no es sencillo ponerlas en un marco común de trabajo.
-
-Por ejemplo, información de tipo sociológico como la tasa de analfabetismo e información de carácter físico o biológico como puede ser la acidez del suelo, no parecen sencillas de combinar para la realización de algún análisis común. De existir alguna relación entre ellas (o de no existir, y pretender demostrar que son variables independientes), es necesario buscar un punto de enlace entre ambas informaciones para poder estudiar esta. Un nexo que las une es el hecho de que están asociadas a una localización en el espacio, ya que una serie de datos de tasa de analfabetismo corresponderán a una serie de lugares, del mismo modo que lo harán los valores de acidez del suelo. 
-
-El hecho de que ambas informaciones tienen a su vez carácter geográfico va a permitir combinarlas y obtener resultados a partir de un análisis común. Puesto que, tal y como se mencionó al inicio de este capítulo, aproximadamente un 70\% de toda la información está georreferenciada, esa georreferencia va a representar en una gran mayoría de los casos un punto común para enmarcar el análisis. El SIG es, en este contexto, el marco necesario en el que incorporar esa información georreferenciada y trabajar con ella.
 
 \subsection{SIG como integrador de tecnologías}
 
