@@ -196,7 +196,7 @@ El siguiente paso es, pues, estudiar cómo los lenguajes de consulta se incorpora
 
 \subsection{El lenguaje SQL}
 
-El lenguaje SQL es un lenguaje de consulta pensado para el manejo de datos, e incluye elementos para realizar todas aquellas operaciones habituales que se presentan en el uso de una base de datos. Su utilización es habitual dentro de cualquier sistema que implique el manejo de datos mediante un gestor de bases de datos, y un cierto conocimiento de sus fundamentos es de indudable interés para el usuario de SIG. El objetivo de esta parte no es constituir una referencia de este lenguaje, sino tan solo presentar sus principales elementos para mostrar la forma en que un lenguaje de consulta soluciona las necesidades que operaciones como las vistas hasta este punto plantean dentro de un SIG. Las referencias sobre SQL son muy abundantes y el lector interesado no tendrá dificultad en encontrar docenas de libros sobre este tema. Una referencia completa es \cite{Beaulieu2003Anaya}. Más fácilmente accesible, en la dirección Web \cite{SQLBasico} puede encontrarse una breve introducción en español al lenguaje SQL, disponible además bajo licencia libre.
+El lenguaje SQL es un lenguaje de consulta pensado para el manejo de datos, e incluye elementos para realizar todas aquellas operaciones habituales que se presentan en el uso de una base de datos. Su utilización es habitual dentro de cualquier sistema que implique el manejo de datos mediante un gestor de bases de datos, y un cierto conocimiento de sus fundamentos es de indudable interés para el usuario de SIG. El objetivo de esta parte no es constituir una referencia de este lenguaje, sino tan solo presentar sus principales elementos para mostrar la forma en que un lenguaje de consulta soluciona las necesidades que operaciones como las vistas hasta este punto plantean dentro de un SIG. Las referencias sobre SQL son muy abundantes y el lector interesado no tendrá dificultad en encontrar docenas de libros sobre este tema. Una referencia completa es \cite{Beaulieu2003Anaya}. 
 
 \index{Structured Query Language (SQL)}
 
@@ -381,7 +381,7 @@ WHERE Cross(Rios.Shape, Paises.Shape)
 
 Al igual que en el apartado anterior, el objetivo de este apartado no es mostrar con detalle la sintaxis del lenguaje SQL cuando este se emplea para la realización de consultas espaciales. Los anteriores son únicamente algunos ejemplos para poner de manifiesto la potencia de este planteamiento y mostrar cómo los elementos espaciales se integran en el lenguaje SQL. Puede encontrarse más información en \cite{Egenhofer1994IEEE}.
 
-Además de esta extensión a SQL, existen otras propuestas propuestas alternativas tales como Geo--SQL\cite{geoSQL}, SSQL (Spatial SQL)\cite{SSQL}o SQL-MM.\index{SQL-MM}\index{Geo--SQL}\index{Spatial SQL}
+Además de esta extensión a SQL, existen otras propuestas propuestas alternativas tales como Geo--SQL, SSQL (Spatial SQL)o SQL-MM.\index{SQL-MM}\index{Geo--SQL}\index{Spatial SQL}
                                                           
 
 \subsection{Índices espaciales}
@@ -399,7 +399,7 @@ Al utilizar una base de datos, si no disponemos de un índice deberemos recorrer 
 
 Los índices nos permiten \emph{alcanzar} los elementos que constituyen la respuesta a nuestra consulta, haciéndolo de la forma más rápida y llegando hasta ellos sin tener que pasar por todos los restantes.
 
-Describir los índices empleados en bases de datos no espaciales requiere describir asimismo estructuras de datos complejas que escapan del alcance de este texto (los denominados \emph{árboles B+} son las estructuras utilizadas con más frecuencia para esta tarea)\footnote{Para el lector interesado, puede encontrarse este tema tratado con mayor profundidad en, por ejemplo, \cite{BTrees}. La descripción original de los árboles B+ aparece en \cite{Bayer1972Acta}}. Por esta razón, no se detallarán en este capítulo más allá de la anterior descripción básica, pudiéndose encontrar más información en las referencias proporcionadas a lo largo del capítulo.\index{Arbol@Árbol!B+}
+Describir los índices empleados en bases de datos no espaciales requiere describir asimismo estructuras de datos complejas que escapan del alcance de este texto (los denominados \emph{árboles B+} son las estructuras utilizadas con más frecuencia para esta tarea). Por esta razón, no se detallarán en este capítulo más allá de la anterior descripción básica, pudiéndose encontrar más información en las referencias proporcionadas a lo largo del capítulo.\index{Arbol@Árbol!B+}
 
 Más interesantes que estos índices nos resultan aquellos que se utilizan en las bases de datos espaciales, que denominamos \emph{índices espaciales}. El concepto es similar al de índices de bases de datos no espaciales: elementos que permiten optimizar las consultas mediante una correcta estructuración de los datos, en particular en este caso de su componente espacial.
 

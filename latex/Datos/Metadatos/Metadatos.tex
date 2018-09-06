@@ -21,7 +21,7 @@ Trabajando en el entorno de un SIG, los datos con los que trabajamos son de tipo
 
 Un ejemplo de metadato global de una capa puede ser el nombre de su autor o la fecha en la que ese dato ha sido creado. El sistema de referencia en el que se expresan las coordenadas de cada entidad recogida es un tipo de metadato relativo a la componente espacial. Y en lo referente a la componente temática, los metadatos pueden recoger las unidades en las que se recoge una variable asociada a cada entidad, o bien almacenar cualquier otro valor que permita una mejor interpretación de esa variable.
 
-En una definición más formal, los metadatos son archivos de información que recogen las características básicas de algún dato o recurso. Representan el quién, qué, cuándo, dónde, cómo y por qué de ese recurso. Los metadatos geoespaciales se emplean para documentar recursos geográficos digitales tales como una base de datos espacial, un SIG o una imagen de satélite. Un registro de metadatos incluye elementos básicos tales como el título o nombre del recurso, elementos geográficos como la extensión que cubre el dato o el sistema de coordenadas empleado, así como elementos relativos a la base de datos asociada tales como la definición de cada uno de sus campos o el dominio en que se encuentran los valores de estos \cite{webFGDC}.
+En una definición más formal, los metadatos son archivos de información que recogen las características básicas de algún dato o recurso. Representan el quién, qué, cuándo, dónde, cómo y por qué de ese recurso. Los metadatos geoespaciales se emplean para documentar recursos geográficos digitales tales como una base de datos espacial, un SIG o una imagen de satélite. Un registro de metadatos incluye elementos básicos tales como el título o nombre del recurso, elementos geográficos como la extensión que cubre el dato o el sistema de coordenadas empleado, así como elementos relativos a la base de datos asociada tales como la definición de cada uno de sus campos o el dominio en que se encuentran los valores de estos.
 
 El concepto de metadato no es algo nuevo y exclusivo de los datos digitales, ya que un mapa impreso también contiene metadatos en cierta forma. Una leyenda o un texto en un margen del mapa con información sobre la fecha en que se ha creado son también metadatos. En el caso de los datos geográficos digitales, los metadatos no forman parte del dato directamente sino que son independientes de este. Ello permitirá realizar operaciones separadamente con los metadatos, tales como búsquedas, que abren nuevas posibilidades y dan un gran valor a estos.
 
@@ -170,7 +170,7 @@ Los metadatos pueden así registrarse a una escala distinta a la de la capa como 
 
 Si para los propios datos geográficos encontramos muy diversas alternativas a la hora de almacenarlos, la situación no es distinta a la hora de almacenar los metadatos. Las dos alternativas principales son el uso de ficheros independientes o el almacenamiento en bases de datos \cite{metadataPrimer}.
 
-Elegir entre uno u otro enfoque depende del conjunto de datos de trabajo, su volumen total, el uso principal que se le da o la granularidad de los datos según vimos en el apartado anterior. \cite{webFGDC} recomienda el uso de bases de datos cuando los datos estén sujetos a frecuentes modificaciones o si existe una parte de los metadatos que es común a varios grupos de datos. Este es el caso que vimos en el apartado anterior al mencionar los metadatos correspondiente a toda una serie de datos.
+Elegir entre uno u otro enfoque depende del conjunto de datos de trabajo, su volumen total, el uso principal que se le da o la granularidad de los datos según vimos en el apartado anterior. Se recomienda el uso de bases de datos cuando los datos estén sujetos a frecuentes modificaciones o si existe una parte de los metadatos que es común a varios grupos de datos. Este es el caso que vimos en el apartado anterior al mencionar los metadatos correspondiente a toda una serie de datos.
 
 Utilizando una base de datos, resulta más sencillo actualizar los datos, especialmente si puede haber varios usuarios que realicen esas actualizaciones. Como veremos más adelante, existen servicios relacionados con la información geográfica que van a permitir a varios usuarios modificar un mismo juego de datos base. Las modificaciones que estos usuarios hagan han de reflejarse en los metadatos, y para ello es necesario contar con una tecnología que permita un acceso concurrente similar para los metadatos. Las bases de datos proveen esas capacidades, y son por tanto adecuadas para el almacenamiento de metadatos en ese contexto.
 
@@ -229,16 +229,6 @@ El uso de herramientas automáticas no se limita al momento de creación de los da
 La importancia de este tipo de aplicaciones es grande si se tiene en cuenta que, como se ha dicho, una de las razones principales de la carencia de metadatos es la cantidad de tiempo que se requiere para elaborarlos.
 
 \end{itemize}
-
-
-\section{Algunos ejemplos}
-
-La mejor forma de entender el contenido de los metadatos es ver algunos sencillos ejemplos reales. Puesto que estos datos son generalmente voluminosos (siempre que tengan el detalle necesario para ser realmente útiles), en lugar de reproducirlos aquí, puedes consultarlos en las direcciones Web \cite{ejemploMetadatos} y \cite{ejemploMetadatos2}, cada una de las cuales tiene un ejemplo concreto.
-
-En ellas pueden verse verse los metadatos con un formato de página Web sencilla compuesta de una lista de apartados y campos, así como su valores correspondientes. A la hora de utilizar la información que estos metadatos contienen desde una aplicación tal como un servidor Web, es necesario no obstante recogerlos en un formato que dicha aplicación pueda entender y procesar utilizando un esquema dado y una semántica bien definida. Es decir, que el \emph{software} que trabaja con metadatos no lo hace a través de documentos como los de esas páginas Web, cuyo formato tiene como único fin mostrarlos de forma legible para una persona. 
-
-Si se comparan los campos y apartados que aparecen en ambas páginas, puede verse que no coinciden completamente. Eso es debido a que esos metadatos han sido generados por distintos organismos, que no utilizan una única metodología. Veremos más delante que existen formas estandarizadas de recoger los metadatos, tanto en lo referente a su formato como a sus contenidos, con objeto de homogeneizar los metadatos generados por organizaciones distintas, proporcionándoles unos criterios comunes a seguir.
-
 
 \section{Resumen}
 

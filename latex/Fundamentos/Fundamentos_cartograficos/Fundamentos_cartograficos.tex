@@ -68,7 +68,7 @@ f=\frac{r_1-r_2}{r_1}
 
 \noindent siendo $r_1$ el semieje mayor y $r_2$ el semieje menor.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.6\mycolumnwidth]{Fundamentos_cartograficos/Elipsoide.pdf}
 \caption{\small Parámetros que definen el elipsoide}
@@ -93,18 +93,18 @@ La tabla \ref{Tabla:Elipsoides} muestra algunos de los elipsoides de uso más ext
 \begin{center}
 \begin{tabular}{cccc}\toprule
 \textsf{Elipsoide} & \textsf{Semieje mayor} & \textsf{Semieje menor}  & \textsf{$\frac{1}{f}$} \\ \midrule
-Australian National & 6378160.000 & 6356774.719 & 298.250000 \\
-Bessel 1841 & 6377397.155 & 6356078.963 & 299.152813 \\
-Clarke 1866 & 6378206.400 & 6356583.800 & 294.978698 \\
-Clarke 1880 & 6378249.145 & 6356514.870 & 293.465000 \\
-Everest 1956 & 6377301.243 & 6356100.228 & 300.801700 \\
-Fischer 1968 & 6378150.000 & 6356768.337 & 298.300000 \\
-GRS 1980 & 6378137.000 & 6356752.314 & 298.257222 \\
-International 1924 (Hayford) & 6378388.000 & 6356911.946 & 297.000000 \\
-SGS 85 & 6378136.000 & 6356751.302 & 298.257000 \\
-South American 1969 & 6378160.000 & 6356774.719 & 298.250000 \\
-WGS 72 & 6378135.000 & 6356750.520 & 298.260000 \\
-WGS 84 & 6378137.000 & 6356752.314 & 298.257224 \\ \bottomrule
+Australian National & 6378160.000 & 6356774.719 & 298.250 \\
+Bessel 1841 & 6377397.155 & 6356078.963 & 299.152 \\
+Clarke 1866 & 6378206.400 & 6356583.800 & 294.978 \\
+Clarke 1880 & 6378249.145 & 6356514.870 & 293.465 \\
+Everest 1956 & 6377301.243 & 6356100.228 & 300.801 \\
+Fischer 1968 & 6378150.000 & 6356768.337 & 298.300 \\
+GRS 1980 & 6378137.000 & 6356752.314 & 298.257 \\
+International 1924 & 6378388.000 & 6356911.946 & 297.000 \\
+SGS 85 & 6378136.000 & 6356751.302 & 298.257 \\
+South American 1969 & 6378160.000 & 6356774.719 & 298.250 \\
+WGS 72 & 6378135.000 & 6356750.520 & 298.260 \\
+WGS 84 & 6378137.000 & 6356752.314 & 298.257 \\ \bottomrule
 \end{tabular}
 \end{center}
 \caption{\small Algunos elipsoides y sus parámetros característicos}
@@ -122,7 +122,7 @@ El elipsoide WGS--84\index{WGS--84} es muy empleado en la actualidad, pues es el
 
 El geoide\index{Geoide} es la otra superficie de referencia, definida como la superficie tridimensional en cuyos puntos la atracción gravitatoria es constante. Se trata de una superficie equipotencial que resulta de suponer los océanos en reposo y a un nivel medio (el nivel es en realidad variable como consecuencia de las mareas, corrientes y otros fenómenos) y prolongar estos por debajo de la superficie terrestre. La particularidad del geoide reside en que en todos sus puntos la dirección de la gravedad es perpendicular a su superficie.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.4\mycolumnwidth]{Fundamentos_cartograficos/Geoide.png}
 \caption{\small Representación gráfica del geoide (Fuente: Misión GRACE (NASA)).}
@@ -137,7 +137,7 @@ Al igual que en el caso de los elipsoides, existen diversos geoides de referenci
 
 La figura \ref{Fig:Tres_superficies} muestra una comparación esquemática entre las tres superficies: superficie real de la Tierra, geoide y elipsoide.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.6\mycolumnwidth]{Fundamentos_cartograficos/Tres_superficies.pdf}
 \caption{\small Tres superficies fundamentales: superficie real de la Tierra, geoide y elipsoide (Adaptado de Wikipedia).}
@@ -176,7 +176,7 @@ El sistema de coordenadas geográficas es un sistema de coordenadas esféricas med
 
 En la figura \ref{Fig:Coordenadas_geograficas} puede verse un esquema de los conceptos anteriores.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.75\mycolumnwidth]{Fundamentos_cartograficos/Coordenadas_geograficas.pdf}
 \caption{\small Esquema de los elementos del sistema de coordenadas geográficas.}
@@ -234,7 +234,7 @@ Se puede pensar que podemos obtener una representación plana de la superficie de
 
 La figura \ref{Fig:Proyeccion} muestra un esquema del concepto de proyección, esbozando la idea de cómo puede establecerse la correspondencia entre puntos de la esfera y del plano.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.5\mycolumnwidth]{Fundamentos_cartograficos/Proyeccion.pdf}
 \caption{\small Esquema del concepto de proyección. A los puntos $A, B$ y $C$ sobre la superficie del elipsoide les asocian equivalentes $a, b$ y $c$ sobre un plano.}
@@ -258,19 +258,19 @@ Las superficies más habituales son el cono y el cilindro (junto con, por supuest
 \index{Punto de fuga}
 
 \begin{itemize}
-\item \textbf{Cónicas}.\index{Proyección geográfica!Cónica} La superficie desarrollable es un cono (Figura \ref{Fig:Proyeccion_conica}), que se sitúa generalmente tangente o secante en dos paralelos a la superficie del elipsoide. En este último caso, la distorsión se minimiza en las áreas entre dichos paralelos, haciéndola útil para representar franjas que no abarquen una gran distancia en latitud, pero poco adecuada para representación de grandes áreas. Algunas de las proyecciones más conocidas de este grupo son la proyección cónica equiárea de Albers\index{Proyección geográfica!equiárea de Albers} y la proyección conforme cónica de Lambert.
+\item \textbf{Cónicas}.\index{Proyección geográfica!Cónica} La superficie desarrollable es un cono (Figura \ref{Fig:Proyeccion_conica_cilindrica}), que se sitúa generalmente tangente o secante en dos paralelos a la superficie del elipsoide. En este último caso, la distorsión se minimiza en las áreas entre dichos paralelos, haciéndola útil para representar franjas que no abarquen una gran distancia en latitud, pero poco adecuada para representación de grandes áreas. Algunas de las proyecciones más conocidas de este grupo son la proyección cónica equiárea de Albers\index{Proyección geográfica!equiárea de Albers} y la proyección conforme cónica de Lambert.
 
-\item \textbf{Cilíndricas}. La superficie desarrollable es un cilindro (Figura \ref{Fig:Proyeccion_cilindrica}). Al proyectar, los meridianos se convierten en lineas paralelas, así como los paralelos, aunque la distancia entre estos últimos no es constante.
+\item \textbf{Cilíndricas}. La superficie desarrollable es un cilindro (Figura \ref{Fig:Proyeccion_conica_cilindrica}). Al proyectar, los meridianos se convierten en lineas paralelas, así como los paralelos, aunque la distancia entre estos últimos no es constante.
 
 En su concepción más simple, el cilindro se sitúa de forma tangente al ecuador (proyección normal o simple), aunque puede situarse secante y hacerlo a los meridianos (proyección transversa) o a otros puntos (proyección oblicua).
 
 La proyección de Mercator, la transversa de Mercator, la cilíndrica de Miller\index{Proyección geográfica!cilíndrica de Miller} o la cilíndrica equiárea de Lambert\index{Proyección geográfica!cilíndrica de Miller} son ejemplos relativamente comunes de este tipo de proyecciones.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.6\mycolumnwidth]{Fundamentos_cartograficos/Proyeccion_conica_cilindrica.pdf}
 \caption{\small Esquema de una proyección cónica (izda.) y cilíndrica(dcha.)}
-\label{Fig:Proyeccion_conica_cilindirca} 
+\label{Fig:Proyeccion_conica_cilindrica} 
 \end{figure}
 
 
@@ -317,7 +317,7 @@ En latitud, cada huso se divide en 20 zonas, que van desde los 80\degree S hasta
 
 La figura \ref{Fig:Zonas_UTM} muestra un esquema de la cuadrícula UTM.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.5\mycolumnwidth]{Fundamentos_cartograficos/Zonas_UTM.png}
 \caption{\small Representación parcial de la cuadrícula UTM en Europa (tomado de Wikipedia)}
@@ -326,7 +326,7 @@ La figura \ref{Fig:Zonas_UTM} muestra un esquema de la cuadrícula UTM.
 
 Una zona UTM se localiza, por tanto, con un número y una letra, y es en función de la zona como posteriormente se dan las coordenadas que localizan un punto. Estas coordenadas se expresan en metros y expresan la distancia entre el punto y el origen de la zona UTM en concreto. El origen de la zona se sitúa en el punto de corte entre el meridiano central de la zona y el ecuador. Por ejemplo, para las zonas UTM en el huso 31, el cual va desde los 0\degree hasta los 6\degree, el origen se sitúa en el punto de corte entre el ecuador y el meridiano de 3\degree (Figura \ref{Fig:Origen_UTM}).
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.35\mycolumnwidth]{Fundamentos_cartograficos/Origen_UTM.pdf}
 \caption{\small Determinación del origen de una zona UTM}
@@ -372,14 +372,12 @@ Uno de los intentos más exitosos en este sentido es el desarrollado por el conso
 
 Este esquema asocia a cada sistema de coordenadas un código (conocido como \emph{código EPSG}) que la identifica. Paralelamente, se han documentado en un formato común las características principales de todos estos sistemas, así como las formulaciones que permiten transformar coordenadas entre ellos.
 
-Esta información constituye el \emph{EPSG geodetic parameter dataset} \cite{webEPSG}, un repositorio de los parámetros necesarios para
+Esta información constituye el \emph{EPSG geodetic parameter dataset}, un repositorio de los parámetros necesarios para
 
 \begin{itemize}
 	\item identificar coordenadas de tal modo que estas describan la posición de un punto de forma inequívoca y no ambigua.
 	\item definir transformaciones y conversiones que permitan pasar de un sistema de referencia a otro.
 \end{itemize}
-
-Información detallada sobre los códigos EPSG puede encontrarse en \cite{webEPSG}.
 
 \section{Escala}
 \label{Escala}
@@ -451,7 +449,7 @@ Existen diversas operaciones que se emplean en el proceso de generalización. Alg
 
 \index{Generalización!cartográfica!tipos}
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.6\mycolumnwidth]{Fundamentos_cartograficos/Generalizacion_agregacion.png}
 \caption{\small Un ejemplo de generalización por agregación. Dos carreteras prácticamente paralelas y unidas se representan como dos elementos en el mapa, pero en el localizador de la parte superior izquierda, a escala de menor detalle, se generalizan como una única (Tomado de Yahoo Maps).}
@@ -486,7 +484,7 @@ El concepto de \emph{capa},\index{Capa} que veremos en el capítulo \ref{Introduc
 
 En la figura \ref{Fig:SIG_multi_escala} puede verse un esquema de lo anterior. A medida que variamos la escala de representación, la información que vemos representada tiene una escala distinta y podría también tener un distinto origen. Incluso el tipo de información que vemos varía, ya que las representaciones más globales son de tipo gráfico, creadas a partir de los propios datos almacenados como objetos (calles, carreteras, etc.), mientras que la de mayor detalle es una fotografía aérea.
 
-\begin{figure}
+\begin{figure}[!th]
 \centering
 \includegraphics[width=.9\textwidth]{Fundamentos_cartograficos/SIG_multi_escala.png}
 \caption{\small En un SIG es habitual manejar información a diferentes escalas. En función de la escala de representación, la información visualizada será una u otra.}
@@ -503,7 +501,7 @@ Este proceso en realidad puede verse como un tipo de generalización <<al vuelo>>
 
 Los algoritmos para llevar a cabo este proceso se conocen como de \emph{remuestreo}\index{Remuestreo}, y los veremos con detalle en el capítulo \ref{Algebra_de_mapas}. Algunos SIG utilizan estos algoritmos para hacer más fluido el manejo de grandes imágenes mediante la creación de las denominadas \emph{pirámides}. Cuando el usuario introduce en el SIG una imagen de gran tamaño, este prepara varias versiones de esa imagen a distintas escalas de detalle, de forma que posteriormente pueda recurrir a la que sea más conveniente en cada caso en función de la escala de representación. Es decir, el SIG realiza la <<generalización>> de esa imagen de forma automática, siendo necesario proporcionarle únicamente la imagen de mayor detalle. La figura \ref{Fig:Piramides} ilustra gráficamente esto. \index{Pirámides}
 
-\begin{figure}[!hbt]
+\begin{figure}[!th][!hbt]
 \centering
 \includegraphics[width=.45\textwidth]{Fundamentos_cartograficos/Piramide.png}
 \caption{\small Pirámides de representación con imágenes preparadas a distintas escalas (Fuente: OSGeo).}

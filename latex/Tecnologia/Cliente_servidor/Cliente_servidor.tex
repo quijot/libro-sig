@@ -38,7 +38,7 @@ El \emph{cliente} es responsable de \emph{pedir} ese dato al servidor, tomarlo y
 Supongamos la dirección Web \texttt{http://victorolaya.com/writing}, en la cual puedes encontrar información relacionada con este libro e incluso descargarlo. Si visitas esa página estás efectuando una petición a través de esa URL, la cual se compone de las siguientes partes:
 
 \begin{itemize}
-	\item \texttt{http}: El protocolo a usar, que define la forma en que se van a comunicar cliente y servidor. Aunque este es el más habitual, existen muchos otros tales como \texttt{ftp} o \texttt{mailto}. Puede encontrarse más acerca de estos protocolos en \cite{protocolosWeb}.
+	\item \texttt{http}: El protocolo a usar, que define la forma en que se van a comunicar cliente y servidor. Aunque este es el más habitual, existen muchos otros tales como \texttt{ftp} o \texttt{mailto}.
 	\item \texttt{victorolaya.com}: Esta cadena identifica la máquina donde reside la página que buscamos. Es en realidad una versión más legible para el ojo humano de un código numérico que indica la dirección concreta. El navegador lo convierte en realidad en algo como 128.118.54.228.
 	\item \texttt{writing}: La página que buscamos dentro de todas las que hay en esa máquina. Se expresa como una ruta a partir del directorio raíz del servidor, que no es necesariamente el directorio raíz de la maquina servidora.
 \end{itemize}
@@ -136,12 +136,12 @@ Si no se emplean estas tecnologías, un cambio mínimo en la configuración de la p
 
 En un entorno RIA, sin embargo, se cargan al inicio (en el primer acceso a la página) los elementos que constituyen la aplicación en sí, y posteriormente se transmiten únicamente los datos que vayan siendo necesarios a medida que el usuario opere con la aplicación. Esto mejora notablemente la sensación del usuario, ya que este nunca tiene ante sí una pantalla sin contenido mientras se carga la página, puesto que esta ya no ha de cargarse de nuevo, y la carga de datos puede además realizarse mientras el propio usuario opera.
 
-AJAX \footnote{Asynchronous JavaScript And XML} \cite{garrett2005ajax} es una técnica de desarrollo muy popular en este sentido, y de la que los SIG Web hacen uso habitualmente. La figura \ref{Fig:AJAX} muestra una comparación entre el esquema de una aplicación Web tradicional y una basada en AJAX. \index{AJAX}
+AJAX \footnote{Asynchronous JavaScript And XML} es una técnica de desarrollo muy popular en este sentido, y de la que los SIG Web hacen uso habitualmente. La figura \ref{Fig:AJAX} muestra una comparación entre el esquema de una aplicación Web tradicional y una basada en AJAX. \index{AJAX}
 
 \begin{figure}[!hbt]   
 \centering
 \includegraphics[width=.55\mycolumnwidth]{Cliente_servidor/ajax.png}
-\caption{\small Comparación entre el esquema de una aplicación Web tradicional y una basada en AJAX.(adaptado de \cite{garrett2005ajax}).}
+\caption{\small Comparación entre el esquema de una aplicación Web tradicional y una basada en AJAX.}
 \label{Fig:AJAX} 
 \end{figure}
 
@@ -162,13 +162,13 @@ Además de modificar la zona representada, un usuario debe poder modificar la for
 
 Esto hace que una aplicación SIG dentro de un navegador se convierta en una herramienta completa para el acceso a uno o varios juegos de datos remotos cuyo contenido es abundante (no solo en extensión sino también en tipos de datos suministrados), ya que permite una gran configurabilidad y deja en manos del cliente (esto es, del usuario), la forma de tomar esos datos y mostrarlos.
 
-Las capacidades de edición también tienen lugar en los SIG Web, ampliando las posibilidades que la interactividad más básica ofrece. Un usuario puede añadir su propia información a un SIG Web o bien modificar una capa existente empleando su navegador. Las tecnologías SIG siguen en este sentido a las tecnologías Web más generales, adoptando los conceptos de la Web 2.0 y ampliando las posibilidades de los usuarios de colaborar directamente en los contenidos de la red. Por ejemplo, \emph{OpenStreetMap} \cite{webOSM} es un sitio equivalente a la bien conocida Wikipedia, en el cual los usuarios pueden añadir sus propias descripciones de elementos geográficos que ellos mismos definen.\index{Wikipedia}\index{OpenStreetMap}
+Las capacidades de edición también tienen lugar en los SIG Web, ampliando las posibilidades que la interactividad más básica ofrece. Un usuario puede añadir su propia información a un SIG Web o bien modificar una capa existente empleando su navegador. Las tecnologías SIG siguen en este sentido a las tecnologías Web más generales, adoptando los conceptos de la Web 2.0 y ampliando las posibilidades de los usuarios de colaborar directamente en los contenidos de la red. Por ejemplo, \emph{OpenStreetMap} es un sitio equivalente a la bien conocida Wikipedia, en el cual los usuarios pueden añadir sus propias descripciones de elementos geográficos que ellos mismos definen.\index{Wikipedia}\index{OpenStreetMap}
 
 A estas mismas tecnologías se les puede dar usos más restringidos sin que necesariamente sea dentro de un proyecto colaborativo abierto. Por ejemplo, una administración local puede dar acceso a los propietarios de suelo para que puedan consultar su catastro, mediante un sistema de autenticación conveniente, incluso editar información de sus parcelas. Está información puede ser de tipo no espacial (es decir, los límites de las parcelas serían fijos), ya que las capacidades de edición no han de limitarse a la componente espacial.\index{Autenticación}
 
 Por último, y aunque en la actualidad son pocos los servicios de este tipo que existen, y no pueden compararse las prestaciones con las que ofrecen los SIG de escritorio, la cartografía Web puede ofrecer herramientas de análisis. Además de representar un conjunto de datos geográficos y permitir al usuario navegar en ellos e incluso editarlos, pueden extraerse resultados a partir de esos datos. 
 
-Un tipo de aplicación bastante extendida de este tipo es el cálculo de rutas óptimas. A partir de una capa con vías de comunicación un usuario establece un punto de salida y otro de destino y la aplicación Web calcula la ruta que optimiza el tiempo empleado o la distancia total recorrida, según lo explicado en el capítulo \ref{Costes}. \cite{webGuiaCampsa} es un ejemplo de este tipo de aplicaciones en el cual la interfaz no es la de un SIG de escritorio habitual, sino que se introducen los lugares de origen y destino tecleando sus nombres y después la ruta calculada se muestra sobre un mapa y también como un conjunto de indicaciones a seguir. Es decir, que sobre una base de cálculo SIG se crea una aplicación más completa que la que es habitual encontrar en un SIG, aprovechando la mayor riqueza de elementos que pueden utilizarse dentro de un navegador Web.
+Un tipo de aplicación bastante extendida de este tipo es el cálculo de rutas óptimas. A partir de una capa con vías de comunicación un usuario establece un punto de salida y otro de destino y la aplicación Web calcula la ruta que optimiza el tiempo empleado o la distancia total recorrida, según lo explicado en el capítulo \ref{Costes}. 
 
 El término \emph{Web Mapping}, habitualmente empleado para designar a la cartografía Web, se sustituye por \emph{Web GIS} a medida que las capacidades de las aplicaciones Web aumentan, para indicar así que todos los componentes que forman parte de un SIG en su sentido clásico, esto es, un SIG de escritorio, se incorporan a dicha aplicación Web.\index{Web GIS}
 
@@ -200,7 +200,7 @@ Dos son las razones principales por las que los \emph{mashups} con componente SI
 Esta cartografía base implica un coste elevado, normalmente no asumible para un uso como este. Sin embargo, disponer de una cartografía base ofrecida por un proveedor que permita crear algún tipo de \emph{mashup} sobre ella facilita que existan este tipo de servicios, como así lo atestigua el gran número de distintas aplicaciones Web que se desarrollan de este modo.
 \end{itemize}
 
-De entre los muchos existentes en la actualidad, Google Maps \cite{webGoogleMaps} es el servicio más popular para la creación de \emph{mashups}, y el que ha supuesto una verdadera revolución en este sentido\index{Google!Maps}. Para ver algunos ejemplos relevantes de este tipo de sitios Web, puede consultarse la página Web \cite{webGoogleMapsCaseStudies}, donde se recopila información sobre Google Maps y los \emph{mashups} más exitosos que derivan de este servicio.
+De entre los muchos existentes en la actualidad, Google Maps es el servicio más popular para la creación de \emph{mashups}, y el que ha supuesto una verdadera revolución en este sentido\index{Google!Maps}. 
 
 
 \section{Clientes y servidores}
@@ -376,7 +376,7 @@ Existen estándares que se convierten en normas o estándares \emph{de iure}, cuan
 
 Un estándar \emph{abierto} es aquel cuya definición se encuentra disponible y todo aquel que lo desee puede conocerla y emplearla para el desarrollo de la actividad relacionada con ese estándar. En nuestro campo de trabajo, eso quiere decir que cualquier desarrollador que desee crear un nuevo cliente o servidor para datos SIG puede acceder al estándar y desarrollar en base a este.
 
-Los principios fundamentales de los estándares abiertos son los siguientes \cite{perensEstandares}:
+Los principios fundamentales de los estándares abiertos son los siguientes:
 
 \begin{itemize}
 	\item \textbf{Disponibilidad}. Los estándares abiertos están disponibles para todos el mundo para su lectura y uso en cualquier implementación.
@@ -433,7 +433,7 @@ Existen organizaciones dedicadas a redactar las especificaciones correspondiente
 
 \subsubsection{Open Geospatial Consortium (OGC)}
 
-El Open Geospatial Consortium \cite{webOGC} es una organización internacional y voluntaria dedicada a la elaboración de estándares. En el OGC participan más de 350 organizaciones miembro, incluyendo entre ellas a los principales fabricantes del sector, agencias nacionales, grupos de investigación u organizaciones sin ánimo de lucro, entre otros. Estas organizaciones miembro colaboran para alcanzar consensos y desarrollar e implementar estándares en el ámbito de los contenidos geoespaciales.
+El Open Geospatial Consortium es una organización internacional y voluntaria dedicada a la elaboración de estándares. En el OGC participan más de 350 organizaciones miembro, incluyendo entre ellas a los principales fabricantes del sector, agencias nacionales, grupos de investigación u organizaciones sin ánimo de lucro, entre otros. Estas organizaciones miembro colaboran para alcanzar consensos y desarrollar e implementar estándares en el ámbito de los contenidos geoespaciales.
 
 Algunos de los estándares OGC más relevantes, los cuales veremos a lo largo de este capítulo, son los siguientes:
 
@@ -450,7 +450,7 @@ Cada uno de estos estándares está descrito en una especificación, y estas están 
 
 \subsubsection{ISO}
 
-ISO \cite{webISO} es una organización internacional dedicada a la elaboración de estándares no solo en el ámbito geográfico, sino en todas las áreas. ISO es responsable, por ejemplo, de estándares bien conocidos y aplicados en la industria actual, tales como los relacionados con la gestión medioambiental en empresas o los estándares de calidad.
+ISO es una organización internacional dedicada a la elaboración de estándares no solo en el ámbito geográfico, sino en todas las áreas. ISO es responsable, por ejemplo, de estándares bien conocidos y aplicados en la industria actual, tales como los relacionados con la gestión medioambiental en empresas o los estándares de calidad.
 
 Dentro de ISO existen diversos comités técnicos, cada uno de los cuales se encarga de definir los estándares correspondientes a un campo de trabajo. El comité ISO/TC 211 es el responsable de aquellos relacionados con la información geográfica digital.
 
@@ -458,19 +458,15 @@ ISO redacta Especificaciones Técnicas y Estándares Internacionales, catalogando 
 
 Existe una estrecha relación entre ISO y OGC, y los estándares elaborados por ambas organizaciones son muchos de ellos muy similares o incluso idénticos. De hecho, algunos de los estándares desarrollados por el OGC, como WMS o GML, citados anteriormente y que en breve detallaremos, son también estándares ISO.
 
-En \cite{webDocsISOTC211} puede consultarse la lista de normas ISO/TC211 aprobadas y el estado de cada uno de sus documentos de trabajo.
-
 \subsubsection{W3C}
 
-El Consorcio World Wide Web (W3C) es un consorcio internacional donde las organizaciones miembro, personal a tiempo completo y el público en general, trabajan conjuntamente para desarrollar estándares Web. Según su propia definición\cite{webW3C}, la misión del W3C es <<guiar la Web hacia su máximo potencial a través del desarrollo de protocolos y pautas que aseguren el crecimiento futuro de la Web>>.
+El Consorcio World Wide Web (W3C) es un consorcio internacional donde las organizaciones miembro, personal a tiempo completo y el público en general, trabajan conjuntamente para desarrollar estándares Web. Según su propia definición, la misión del W3C es <<guiar la Web hacia su máximo potencial a través del desarrollo de protocolos y pautas que aseguren el crecimiento futuro de la Web>>.
 
 El W3C no guarda una relación directa con los SIG, pero parece lógico pensar que todo aquello que se haga en el seno de Internet debería acomodarse a las pautas establecidas por este consorcio, en especial si lo que se desea es maximizar la interoperabilidad, como ya hemos visto que resulta de interés en el ámbito SIG. Puesto que la mayoría de los estándares abiertos que vamos a ver en este capítulo se aplican sobre tecnologías que operan en la red, estos se han de fundamentar siempre que sea posible en otros existentes desarrollados por el W3C, o al menos seguir las recomendaciones de este organismo.
 
 Visto de otro modo, el W3C persigue objetivos similares a los de las organizaciones que elaboran estándares para la información geoespacial, pero su campo de actuación es la red en términos generales.
 
 De entre todos los elementos definidos por el W3C, resulta de especial importancia el lenguaje XML (eXtensible Markup Language\footnote{Lenguaje de Marcado Extensible}).\index{XML} XML no es un lenguaje en sí, sino que permite definir la gramática de otros lenguajes. Es lo que se conoce como \emph{metalenguaje}. De este modo, puede utilizarse para definir reglas para crear formas de expresión que permitan recoger cualquier tipo de información. Esto hace que pueda emplearse para el intercambio de información de toda clase, y es la base de la mayoría de estándares a tratar en este apartado.
-
-Entrar en detalles acerca de XML escapa del ámbito de este libro. No obstante, para aquellos que deseen saber más, Internet está llena de buenas referencias libres sobre XML, como por ejemplo \cite{wikibookXML}.
 
 \subsection{Estándares para representación y obtención de información geográfica}
 
@@ -485,11 +481,11 @@ Sabemos del capítulo \ref{Consultas} que el lenguaje SQL en su forma básica no s
 
 El problema surge debido a que la propia flexibilidad de este mecanismo permite que los tipos se implementen de diversas formas, lo cual no favorece la interoperabilidad. Si una consulta se establece sobre unos tipos definidos de forma distinta a como lo están en la base de datos que recibe la consulta, esa consulta no podrán procesarse correctamente. Es necesario definir una forma estandarizada de definir esos tipos, y una pauta a seguir para su implementación.
 
-OGC define la especificación \emph{Simple Features for SQL} (SFS) \cite{webSFS} con objeto de hacer frente al problema anterior. SFS define por un lado unos tipos estandarizados para geometrías, los cuales se basan en otra especificación OGC denominada \emph{OpenGIS Geometry Model}, que establece una forma de definir geometrías. Por otra parte, se definen una serie de operaciones SQL que operan sobre esos tipos.
+OGC define la especificación \emph{Simple Features for SQL} (SFS) con objeto de hacer frente al problema anterior. SFS define por un lado unos tipos estandarizados para geometrías, los cuales se basan en otra especificación OGC denominada \emph{OpenGIS Geometry Model}, que establece una forma de definir geometrías. Por otra parte, se definen una serie de operaciones SQL que operan sobre esos tipos.
 
 Todas las geometrías que pueden definirse según este esquema son geometrías en un espacio bidimensional, y cada objeto geométrico está asociado a un sistema de referencia en el cual se define.
 
-Existe un objeto fundamental denominado \emph{Geometry} del que heredan los restantes en una jerarquía bien definida (Figura \ref{Fig:Jerarquia_clases_SFS}). Los métodos de este objeto son de tres tipos:
+Existe un objeto fundamental denominado \emph{Geometry} del que heredan los restantes en una jerarquía bien definida. Los métodos de este objeto son de tres tipos:
 
 \begin{itemize}
 	\item Métodos básicos. Proveen información sobre el objeto (dimensión, tipo de geometría, sistema de referencia, etc.)
@@ -503,7 +499,7 @@ Con estos objetos y sus métodos se da respuesta a todas las necesidades que apar
 
 \subsubsection {Geography Markup Language (GML)}
 
-El \emph{Geography Markup Language} (GML) \cite{webGML} es un lenguaje basado en XML, diseñado para el almacenamiento de información geográfica. Utilizando este lenguaje, resulta posible el intercambio de información geográfica de forma interoperable.
+El \emph{Geography Markup Language} (GML) es un lenguaje basado en XML, diseñado para el almacenamiento de información geográfica. Utilizando este lenguaje, resulta posible el intercambio de información geográfica de forma interoperable.
 
 GML puede utilizarse para transmitir información a través de una red, como parte de un servicio. Este es el caso del servicio WFS que veremos más adelante, que devuelve información geográfica codificada según este lenguaje. No obstante, puede emplearse igualmente para almacenar la información con la que trabajamos de un SIG, del mismo modo que utilizamos cualquiera de los formatos de archivo que vimos en el capítulo \ref{Fuentes_datos}. Es decir, sin que tengan que mediar servicios en ningún momento.
 
@@ -517,7 +513,7 @@ Existe un dialecto conocido como \emph{Simple Features Protocol} que trata de so
 
 \subsubsection {Web Feature Service (WFS)}
 
-El servicio \emph{Web Feature Service} WFS \cite{webWFS} está relacionado con los datos de tipo vectorial, y a través de él se sirven directamente las entidades de un dato vectorial con sus geometrías y datos alfanuméricos asociados. Desde este punto de vista, acceder a un servicio WFS es similar a acceder a una capa vectorial cualquiera o a una base de datos, ya que el SIG puede recuperar la información correspondiente (tanto la componente geográfica como la temática de cada entidad) y operar con ella.
+El servicio \emph{Web Feature Service} WFS está relacionado con los datos de tipo vectorial, y a través de él se sirven directamente las entidades de un dato vectorial con sus geometrías y datos alfanuméricos asociados. Desde este punto de vista, acceder a un servicio WFS es similar a acceder a una capa vectorial cualquiera o a una base de datos, ya que el SIG puede recuperar la información correspondiente (tanto la componente geográfica como la temática de cada entidad) y operar con ella.
 
 En particular, las operaciones que permite un servicio WFS son:
 
@@ -543,7 +539,7 @@ Cuando un cliente efectúa una petición a un servidor WFS, no es necesario que ob
 
 Ya conocemos elementos que permiten realizar ese tipo de consultas para trabajar con un subgrupo de las entidades de una capa. En el capítulo \ref{Consultas} vimos el lenguaje SQL, mediante el cual podían definirse consultas de esta clase.
 
-El estándar Filter Encoding \cite{FilterEncoding} define un formato basado en XML para el almacenamiento de expresiones de filtrado según otro estándar OGC conocido como \emph{OGC Common Catalog Query Language}. La expresión del filtro expresada según la especificación Filter Encoding puede ser validada y procesada por herramientas adicionales para convertirla en las expresiones correspondientes en otro lenguaje para consulta de bases de datos espaciales. Por ejemplo, en una clausula \texttt{WHERE} de SQL que emplear en una sentencia \texttt{SELECT}.
+El estándar Filter Encoding define un formato basado en XML para el almacenamiento de expresiones de filtrado según otro estándar OGC conocido como \emph{OGC Common Catalog Query Language}. La expresión del filtro expresada según la especificación Filter Encoding puede ser validada y procesada por herramientas adicionales para convertirla en las expresiones correspondientes en otro lenguaje para consulta de bases de datos espaciales. Por ejemplo, en una clausula \texttt{WHERE} de SQL que emplear en una sentencia \texttt{SELECT}.
 
 Las expresiones que pueden recogerse empleando \emph{Feature Encoding} pueden ser consultas con componente espacial o hacer referencia a la parte temática de la información geográfica. Es decir, que permiten recoger toda la variabilidad de las consultas espaciales que vimos en el capítulo \ref{Consultas}
 
@@ -569,7 +565,7 @@ El estándar WMS, el principal en esta categoría, está ampliamente probado e impl
 
 \subsubsection{Web Map Service (WMS)}
 
-El estándar \emph{Web Map Service} (WMS) \cite{webWMS} define los elementos necesarios para un servicio de mapas.
+El estándar \emph{Web Map Service} (WMS) define los elementos necesarios para un servicio de mapas.
 
 Un servicio WMS devuelve una imagen con información geográfica, pero esta solo contiene la propia información visual para que el cliente pueda mostrarla. Es decir, si se pide a este servicio un mapa creado a partir de un MDE, la información de los píxeles no contiene la elevación de la coordenada correspondiente, sino el color asociado en función de un determinado criterio. La imagen puede contener otros elementos visuales tales como etiquetas o símbolos, en función de cómo se haga la representación en el servidor. Una vez que el cliente recibe la imagen, no puede actuar sobre esta para cambiar la forma de representación de una capa, sino simplemente representarla como es.
 
@@ -580,9 +576,9 @@ Para solucionar esto y ampliar las capacidades del servicio WMS, aparece otro nu
 \subsubsection{Styled Layer Description (SLD)}
 \label{SLD}
 
-El estándar OGC \emph{Styled Layer Description} (SLD) \cite{webSLD} define una forma de almacenar los parámetros de representación empleados para crear un mapa a partir de los datos geográficos. Este estándar permite extender las capacidades de WMS, ofreciendo al cliente la posibilidad de definir sus propias configuraciones.
+El estándar OGC \emph{Styled Layer Description} (SLD) define una forma de almacenar los parámetros de representación empleados para crear un mapa a partir de los datos geográficos. Este estándar permite extender las capacidades de WMS, ofreciendo al cliente la posibilidad de definir sus propias configuraciones.
 
-SLD es un estándar complejo que permite cubrir situaciones variadas y no solo las más sencillas y habituales. Permite, por ejemplo, el ajuste de elementos tales como etiquetas o simbologías personalizadas para elementos puntuales (por ejemplo, representar cada punto de una capa de localizaciones de estaciones de autobús con un pequeño dibujo de un autobús), Para esto último se apoya en otros estándares tales como SVG \cite{webSVG}, diseñado para la representación de gráficos vectoriales.
+SLD es un estándar complejo que permite cubrir situaciones variadas y no solo las más sencillas y habituales. Permite, por ejemplo, el ajuste de elementos tales como etiquetas o simbologías personalizadas para elementos puntuales (por ejemplo, representar cada punto de una capa de localizaciones de estaciones de autobús con un pequeño dibujo de un autobús), Para esto último se apoya en otros estándares tales como SVG, diseñado para la representación de gráficos vectoriales.
 
 Las simbologías recogidas en un documento SLD pueden emplearse para la representación tanto de capas ráster como vectoriales.
 
@@ -592,7 +588,7 @@ Para hacer esto, pueden emplearse las operaciones de los servicios de donde se t
 
 \subsubsection{Web Mapping Context (WMC)}
 
-El estándar \emph{Web Mapping Context} (WMC) \cite{webWMC} define un formato estandarizado para almacenar un \emph{contexto}. Un \emph{contexto} recoge la información necesaria para reproducir las condiciones de una determinada sesión de uso de un cliente, de tal forma que ese cliente pueda restablecerlas posteriormente. El contexto se almacena en un archivo XML.
+El estándar \emph{Web Mapping Context} (WMC) define un formato estandarizado para almacenar un \emph{contexto}. Un \emph{contexto} recoge la información necesaria para reproducir las condiciones de una determinada sesión de uso de un cliente, de tal forma que ese cliente pueda restablecerlas posteriormente. El contexto se almacena en un archivo XML.
 
 En el contexto se almacena información sobre las capas que forman el mapa representado por el cliente y los servidores de los que estas se obtienen, la región cubierta por el mapa, así como información adicional para anotar este mapa.
 
@@ -654,7 +650,7 @@ En España, existe el Núcleo Español de Metadatos (NEM), un subconjunto de la ISO
 
 \subsubsection{Nomenclátor (Gazetteer)} \label{Nomenclator}
 
-Un \emph{nomenclátor} o {gazeteer} permite la localización de fenómenos geográficos a partir de un determinado nombre. El catálogo sobre el que se basa es una colección de estos fenómenos, cada uno de ellos asociados a un identificador geográfico. Dicho identificador es una referencia espacial en forma de etiqueta o código que identifica un lugar en el mundo real \cite{iso19112}. Ejemplos de tales identificadores son los nombres de ciudades o pueblos (Burgos, Plasencia), los códigos postales (10600), los accidentes geográficos (Puerto de Navacerrada, Pico de la Miel) o las direcciones (Carretera N--V p.k.35, Calle Mayor 32), entre otros. Así, el servicio de nomenclátor permite establecer un sistema de referencia basado en identificadores geográficos.
+Un \emph{nomenclátor} o {gazeteer} permite la localización de fenómenos geográficos a partir de un determinado nombre. El catálogo sobre el que se basa es una colección de estos fenómenos, cada uno de ellos asociados a un identificador geográfico. Dicho identificador es una referencia espacial en forma de etiqueta o código que identifica un lugar en el mundo real. Ejemplos de tales identificadores son los nombres de ciudades o pueblos (Burgos, Plasencia), los códigos postales (10600), los accidentes geográficos (Puerto de Navacerrada, Pico de la Miel) o las direcciones (Carretera N--V p.k.35, Calle Mayor 32), entre otros. Así, el servicio de nomenclátor permite establecer un sistema de referencia basado en identificadores geográficos.
 
 El servicio recibe como entrada un nombre y utiliza este para localizar los fenómenos geográficos que cumplen un criterio. Este criterio puede ser variable, pudiendo exigir que el nombre coincida plenamente, que comience por él, o que lo contenga, entre otras opciones. Es habitual además que el catálogo contenga una tipología de los fenómenos recogidos (población, río, puerto, lago, etc.), de forma que esta también puede utilizarse para establecer el criterio de consulta (por ejemplo, para localizar todos los ríos que comiencen con las letra <<b>>).
 

@@ -378,14 +378,7 @@ Tanto la orientación como pendiente pueden representarse de modo simultaneo no c
 \label{Fig:Representacion_gradiente}
 \end{figure}
 
-Como veremos más en detalle en las próximas secciones, la orientación tiene relación directa con el comportamiento de los flujos sobre el terreno y sirve por tanto para el análisis hidrológico. Los análisis que veremos son de tipo regional, aunque la orientación puede usarse también en análisis focales para definir parámetros relacionados con el comportamiento hidrológico, tales como el \emph{índice de convergencia} \cite{Koethe1996SARA}. Una representación de este índice se encuentra en la figura \ref{Fig:Indice_convergencia}.\index{Indice@Índice!de convergencia}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.5\mycolumnwidth]{Geomorfometria/Indice_convergencia.png}
-\caption{\small Indice de convergencia.}
-\label{Fig:Indice_convergencia}
-\end{figure}
+Como veremos más en detalle en las próximas secciones, la orientación tiene relación directa con el comportamiento de los flujos sobre el terreno y sirve por tanto para el análisis hidrológico. Los análisis que veremos son de tipo regional, aunque la orientación puede usarse también en análisis focales para definir parámetros relacionados con el comportamiento hidrológico, tales como el \emph{índice de convergencia} \cite{Koethe1996SARA}.
 
 Otro de los usos habituales de los MDE es el relativo a la insolación. Tradicionalmente, la propia orientación se ha utilizado para evaluar si una zona se encuentra situada en solana o en umbría. Con la mayor potencia que el cálculo basado en un MDE nos brinda, podemos obtener resultados más precisos.\index{Insolación}
 
@@ -394,7 +387,7 @@ Una primera aproximación mediante un modelo sencillo se obtiene combinando los v
 \begin{figure}[!hbt]   
 \centering
 \includegraphics[width=\textwidth]{Geomorfometria/Relieve_sombreado.png}
-\caption{\small Utilización de una capa de relieve sombreado para mejorar la visualización de una imagen aérea }
+\caption{\small Utilización de una capa de relieve sombreado para mejorar la visualización de una imagen aérea.}
 \label{Fig:Relieve_sombreado} 
 \end{figure}
 
@@ -889,15 +882,7 @@ Puede aplicarse una ponderación a las celdas, de tal forma que los valores resul
 De igual modo, pueden emplearse algunos de los parámetros que hemos desarrollado anteriormente y calcular después valores medios. Un posible ejemplo es la pendiente media aguas arriba. Esta se calcula con un mapa de pendiente acumulada ---ponderando las celdas según su pendiente---, y dividiéndolo por el mapa de área acumulada, expresada esta en numero de celdas. Puesto que refleja la pendiente media de las celdas que aportan flujo, este parámetro puede relacionarse con la velocidad y energía de dichos flujos.\index{Pendiente!acumulada}
 
 
-Empleando un enfoque similar basado en el estudio de direcciones de flujo y conectividad hidrológica entre celdas, se obtienen otros parámetros tales como la longitud de flujo desde aguas arriba. Este valor refleja la distancia máxima recorrida desde cada celda hasta el punto hidrológicamente más alejado de entre los situados aguas arriba de ella. El concepto de orden jerárquico de cauces \cite{Horton1932TAGU, Strahler1964Chow} puede aplicarse a la densa red que conforman todas las conexiones entre celdas, para obtener una nueva capa de ordenes (Figura \ref{Fig:Orden_Strahler}).\index{Longitud!de flujo}\index{Orden!jerárquico de cauce}
-
-
-\begin{figure}[h]   
-\centering
-\includegraphics[width=.5\mycolumnwidth]{Geomorfometria/Orden_strahler.png}
-\caption{\small Mapa de órdenes de Strahler\index{Orden!de Strahler}.}
-\label{Fig:Orden_Strahler} 
-\end{figure}
+Empleando un enfoque similar basado en el estudio de direcciones de flujo y conectividad hidrológica entre celdas, se obtienen otros parámetros tales como la longitud de flujo desde aguas arriba. Este valor refleja la distancia máxima recorrida desde cada celda hasta el punto hidrológicamente más alejado de entre los situados aguas arriba de ella. El concepto de orden jerárquico de cauces \cite{Horton1932TAGU, Strahler1964Chow} puede aplicarse a la densa red que conforman todas las conexiones entre celdas, para obtener una nueva capa de ordenes.
 
 Un concepto importante a la hora de calcular el área acumulada u otros parámetros derivados como los anteriores es el de \emph{contaminación de borde}\index{Contaminación de borde}. Se dice que una celda está afectada por contaminación de borde cuando entre aquellas celdas que se encuentran situadas aguas arriba de esta se incluyen celdas en el borde el MDE. Puede suceder que estas celdas de borde tengan aguas arriba de ellas otras celdas, pero, puesto que estas no se encuentran en el MDE, no podemos conocerlas. De esta forma, el valor de área acumulada que se obtiene para las celdas afectadas de contaminación de borde es probable que no sea correcto.\index{Contaminación de borde}
 
@@ -1082,15 +1067,6 @@ Detrás de su aspecto sencillo, este índice esconde una gran cantidad de informac
 
 Valores altos del índice implican zonas con baja pendiente o con gran cantidad de área acumulada. Por tanto, se trata de celdas a las que llegarán flujos abundantes y que no evacuan bien dicho flujo, teniendo tendencia a acumular humedad. Por el contrario, las celdas con valores bajos, con elevada pendiente y baja área acumulada, serán celdas en las que no se encontrará humedad edáfica.
 
-La figura \ref{Fig:Indice_topografico} muestra el mapa de este parámetro.
-
-\begin{figure}[h]      
-\centering
-\includegraphics[width=.5\mycolumnwidth]{Geomorfometria/Indice_humedad.png}
-\caption{\small Mapa de índice topográfico de humedad.}
-\label{Fig:Indice_topografico}
-\end{figure}
-
 De formulación similar el anterior, el \emph{índice de potencia de cauce} caracteriza la energía de los flujos a través de cada celda. Su expresión es la siguiente:
 
 \begin{equation}
@@ -1098,7 +1074,6 @@ P=a's
 \end{equation}
 
 Valores altos tanto de área acumulada como de pendiente, ambos implican una mayor energía del flujo. En un caso, porque este flujo sera abundante, y en otro porque llevará una mayor velocidad.
-
 
 Por último, el factor LS de la Ecuación Universal de Pérdidas de Suelo, originalmente basado en la longitud de la pendiente y su magnitud, se sustituye por la siguiente expresión \cite{Moore1992JSWC}, empleando el área acumulada específica:
 
